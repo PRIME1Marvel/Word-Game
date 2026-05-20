@@ -6,6 +6,8 @@ Word Grid Duel is designed for two local players.
 Player A and Player B take turns placing one alphabet letter into an empty grid cell. After every move, the game checks whether a valid word has been formed.
 
 The player who completes a valid word gets the point.
+<img width="776" height="848" alt="image" src="https://github.com/user-attachments/assets/ad720506-fdb5-496a-a92a-a2276519a33f" />
+
 
 Features
 Two-Player Gameplay
