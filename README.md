@@ -8,7 +8,10 @@ Players take turns selecting an empty cell and placing one letter. Words are che
 
 Impact on Brain:
 This game improves vocabulary, spelling, memory, focus, quick thinking, pattern recognition, and decision-making. It also encourages strategic planning because players must think about both creating their own words and blocking the opponent.
+
+
 <img width="776" height="848" alt="image" src="https://github.com/user-attachments/assets/ad720506-fdb5-496a-a92a-a2276519a33f" />
+
 
 Possible future upgrades:
 Online multiplayer mode
