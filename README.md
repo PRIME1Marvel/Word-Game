@@ -1,261 +1,20 @@
-# Word-Game
-Game Concept
+Word Grid Duel is a two-player word game where players take turns placing letters on a grid. The player who completes a valid word scores a point.
 
-Word Grid Duel is designed for two local players.
+Features:
+It includes two-player gameplay, custom grid size, word detection, dictionary import, custom word support, a 30-second turn timer, cell locking, move history, score tracking, and responsive design for desktop and mobile.
 
-Player A and Player B take turns placing one alphabet letter into an empty grid cell. After every move, the game checks whether a valid word has been formed.
+Game Rules:
+Players take turns selecting an empty cell and placing one letter. Words are checked horizontally, vertically, and diagonally. A word must exist in the active dictionary to score. Each word can score only once. If a player does not move within 30 seconds, their turn is skipped. The player with the highest score wins.
 
-The player who completes a valid word gets the point.
+Impact on Brain:
+This game improves vocabulary, spelling, memory, focus, quick thinking, pattern recognition, and decision-making. It also encourages strategic planning because players must think about both creating their own words and blocking the opponent.
 <img width="776" height="848" alt="image" src="https://github.com/user-attachments/assets/ad720506-fdb5-496a-a92a-a2276519a33f" />
 
-
-Features
-Two-Player Gameplay
-Player A and Player B take turns.
-The active player is shown clearly on the screen.
-Background color changes based on the current player.
-Scores are tracked separately for both players.
-Custom Grid Size
-
-The board size can be changed before or during setup.
-
-Supported grid size:
-
-Minimum: 3 × 3
-Maximum: 9 × 9
-
-Default board:
-
-5 × 5
-Word Detection
-
-The game checks for valid words in straight lines:
-
-Left to right
-Top to bottom
-Diagonal
-
-When a word is found in the dictionary, the player who placed the final letter gets a point.
-
-Dictionary Support
-
-The game includes a built-in starter dictionary.
-
-You can also import your own dictionary file.
-
-Supported dictionary format:
-
-.txt
-
-Recommended format:
-
-ONE
-TWO
-THREE
-GAME
-WORD
-PLAYER
-
-One word per line works best.
-
-The game automatically:
-
-Converts words to uppercase
-Removes invalid characters
-Filters usable words
-Adds imported words to the active dictionary
-Custom Words
-
-Players can manually add extra words using the custom word input box.
-
-Example:
-
-REACT, CODE, INDIA, GRID
-
-These words are added to the active dictionary immediately.
-
-No Repeated Word Scoring
-
-Each valid word can score only once per game.
-
-For example, if TWO is formed once and already scored, forming TWO again later will not give another point.
-
-30-Second Turn Timer
-
-Each player gets 30 seconds per turn.
-
-If a player does not place a letter before the timer ends:
-
-Their turn is skipped
-The next player gets the turn
-The timer resets to 30 seconds
-
-The timer starts only after the Start Game button is clicked.
-
-Cell Locking
-
-Players click an empty cell to select it.
-
-After selecting a cell:
-
-The cell is locked for the current player
-The player presses one alphabet key
-The letter is placed into that cell
-The cell becomes permanently locked
-The turn changes automatically
-Move History
-
-The game records recent moves, including:
-
-Which player moved
-Which letter was placed
-The cell position
-Whether the move scored a word
-Timeout events
-Responsive UI
-
-The game is designed to work on:
-
-Desktop
-Laptop
-Tablet
-Mobile browser
-Tech Stack
-
-This project uses only frontend web technologies:
-
-Technology	Purpose
-HTML	Page structure
-CSS	Styling, layout, responsive design
-JavaScript	Game logic, scoring, timer, dictionary import
-GitHub Pages	Hosting and deployment
-
-No backend server is required.
-
-Project Structure
-word-grid-duel/
-│
-├── index.html
-├── style.css
-├── script.js
-└── README.md
-index.html
-
-Contains the main structure of the game page.
-
-style.css
-
-Contains all visual styling, including:
-
-Layout
-Player themes
-Score cards
-Board design
-Timer bar
-Responsive design
-script.js
-
-Contains the full game logic:
-
-Board creation
-Turn handling
-Timer
-Word scanning
-Dictionary import
-Score calculation
-Move history
-Reset and setup controls
-How to Play
-Open the game.
-Click Start Game.
-Player A selects an empty cell.
-Player A presses one alphabet key.
-The letter is placed.
-The game checks for valid words.
-If a word is completed, Player A scores.
-Turn changes to Player B.
-Continue until the board is full.
-The player with the highest score wins.
-Scoring Rules
-
-A player earns points when a valid dictionary word is completed.
-
-Example:
-
-T W O
-
-If TWO exists in the dictionary, the player who placed the completing letter earns 1 point.
-
-Rules:
-
-Words must exist in the active dictionary.
-Words must meet the minimum word length.
-Each word scores only once per game.
-Reverse words are not counted by default.
-Words can be horizontal, vertical, or diagonal.
-Timer Rules
-
-Each turn has a 30-second limit.
-
-If the timer reaches zero:
-
-Current player's turn is skipped.
-
-Then:
-
-Next player gets 30 seconds.
-Dictionary File Format
-
-You can import a .txt dictionary file.
-
-Best format:
-
-APPLE
-BALL
-CAT
-DOG
-GAME
-GRID
-WORD
-
-The game also supports files where words are separated by spaces, commas, or new lines.
-
-Example:
-
-APPLE, BALL, CAT, DOG
-Deployment on GitHub Pages
-
-This project can be deployed directly using GitHub Pages.
-
-Steps
-Create a GitHub repository.
-Upload these files:
-index.html
-style.css
-script.js
-README.md
-Go to repository Settings.
-Open Pages.
-Under Build and deployment, select:
-Source: Deploy from a branch
-Branch: main
-Folder: / root
-Click Save.
-Wait 1–2 minutes.
-Open your GitHub Pages URL.
-
-Example:
-
-https://your-username.github.io/your-repository-name/
-Future Improvements
-
 Possible future upgrades:
-
 Online multiplayer mode
 Room code system
 Firebase or Supabase integration
 AI opponent
-Sound effects
 Word animation effects
 Better dictionary API support
 Leaderboard
@@ -284,19 +43,7 @@ Created by PRIME1Marvel
 GitHub:
 
 https://github.com/PRIME1Marvel
-Project Status
 
-Current status:
-
-Playable browser game
-
-Main features completed:
-
-Two-player local gameplay
-Custom grid
-Timer
-Dictionary import
-Custom words
 Word scoring
 Move history
 GitHub Pages deployment
